@@ -21,28 +21,28 @@ const paths = {
 
 }
 
-gulp.task('default', ['browser-sync'], function() {
+gulp.task('default', ['browser-sync'], () => {
   gulp.watch([paths.publicDir], reload);
 })
 
-gulp.task('browser-sync', ['nodemon'], function() {
+gulp.task('browser-sync', ['nodemon'], () => {
   browserSync.init({
      proxy: "http://localhost:3000",
      port: 5000
   })
 })
 
-gulp.task('nodemon', ['main'], function (cb) {
+gulp.task('nodemon', ['main'], (cb) => {
   var started = false;
 
   return nodemon({
     script: 'server.js'
-    }).on('start', function() {
+    }).on('start', () => {
       if (!started) {
         cb();
         started = true;
       }
-    }).on('reload', function() {
+    }).on('reload', () => {
       reload({stream:false});
     }, 1000);
 })
