@@ -50,7 +50,7 @@ gulp.task('nodemon', ['main'], (cb) => {
 gulp.task('main', ['build'], () =>
   gulp.src(paths.clientEntryPoint)
     .pipe(webpack(webpackConfig))
-    .pipe(gulp.dest(paths.distDir))
+    .pipe(gulp.dest(paths.publicDir))
 )
 
 gulp.task('build', ['clean'], () =>
