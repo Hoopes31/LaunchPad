@@ -1,4 +1,3 @@
-
 import gulp from 'gulp'
 import babel from 'gulp-babel'
 import browserSync from 'browser-sync'
@@ -10,7 +9,7 @@ import webpackConfig from './webpack.config.babel'
 
 const paths = {
 
-  allSrcJs: 'src/**/*.js',
+  allSrcJs: 'src/**/*.js?(x)',
   serverSrcJs: 'src/server/**/*.js?(x)',
   sharedSrcJs: 'src/shared/**/*.js?(x)',
   clientEntryPoint: 'src/client/app.jsx',
@@ -21,12 +20,18 @@ const paths = {
 
 }
 
+const bs = browserSync.create()
+
 gulp.task('default', ['browser-sync'], () => {
-  gulp.watch([paths.publicDir], reload);
+  gulp.watch(paths.allSrcJs, ['reload'])
+})
+
+gulp.task('reload', ['main'], () => {
+  bs.watch(paths.publicDir).on('change', bs.reload)
 })
 
 gulp.task('browser-sync', ['nodemon'], () => {
-  browserSync.init({
+  bs.init({
      proxy: "http://localhost:3000",
      port: 5000
   })
