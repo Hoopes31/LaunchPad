@@ -68,7 +68,7 @@
 	  return _react2.default.createElement(
 	    'div',
 	    null,
-	    'The dog says: ',
+	    'TESTING WHAT THE DOG SAYS: The dog says: ',
 	    props.message
 	  );
 	};

@@ -7,7 +7,7 @@ const dogBark = new Dog('Browser Toby').bark()
 
 const App = props => (
   <div>
-    The dog says: {props.message}
+    TESTING WHAT THE DOG SAYS: The dog says: {props.message}
   </div>
 );
 

@@ -22,12 +22,11 @@ const paths = {
 
 const bs = browserSync.create()
 
-gulp.task('default', ['browser-sync'], () => {
-  gulp.watch(paths.allSrcJs, ['reload'])
+gulp.task('default', ['browser-sync', 'watch'], () => {
 })
 
-gulp.task('reload', ['main'], () => {
-  bs.watch(paths.publicDir).on('change', bs.reload)
+gulp.task('watch', () => {
+  gulp.watch(paths.allSrcJs, ['main'])
 })
 
 gulp.task('browser-sync', ['nodemon'], () => {
@@ -37,7 +36,7 @@ gulp.task('browser-sync', ['nodemon'], () => {
   })
 })
 
-gulp.task('nodemon', ['main'], (cb) => {
+gulp.task('nodemon', (cb) => {
   var started = false;
 
   return nodemon({
@@ -48,15 +47,16 @@ gulp.task('nodemon', ['main'], (cb) => {
         started = true;
       }
     }).on('reload', () => {
-      reload({stream:false});
-    }, 1000);
+      reload({stream:true});
+    },);
 })
 
-gulp.task('main', ['build'], () =>
-  gulp.src(paths.clientEntryPoint)
+gulp.task('main', ['build'], () => {
+   gulp.src(paths.clientEntryPoint)
     .pipe(webpack(webpackConfig))
     .pipe(gulp.dest(paths.publicDir))
-)
+    .pipe(bs.reload({stream:true}))
+})
 
 gulp.task('build', ['clean'], () =>
   gulp.src(paths.allSrcJs)
