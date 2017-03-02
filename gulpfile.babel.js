@@ -47,7 +47,7 @@ gulp.task('nodemon', (cb) => {
         started = true;
       }
     }).on('reload', () => {
-      reload({stream:true});
+      reload({stream:false});
     },);
 })
 
