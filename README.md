@@ -37,4 +37,5 @@ Built as a starting point for first time react web developers who want a functio
 ######Run the app by typing 
 `gulp`
 
+##Giving Thanks
 Based on [js-stack-from-scratch](https://github.com/verekia/js-stack-from-scratch) by [Verekia](https://github.com/verekia):+1:
