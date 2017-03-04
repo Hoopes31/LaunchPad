@@ -4,13 +4,15 @@ Basic Web App Scaffolding for React.
 
 ##Includes
 
-*
 ES6 Piping via `Gulp/Babel`
-*
+
+
 Browser Reload via `BrowserSync`
-*
+
+
 Express Server Refresh via `Nodemon`
-*
+
+
 Bundling via `Webpack`
 
 ##Use
