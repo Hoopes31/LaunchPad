@@ -34,7 +34,7 @@ Built as a starting point for first time react web developers who want a functio
 ######Install all required packages by typing the following in your saved folder 
 `npm i`
 
-######Run the app by typing 
+######Run by typing 
 `gulp`
 
 ##Giving Thanks
