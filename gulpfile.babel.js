@@ -46,10 +46,9 @@ gulp.task('nodemon', (cb) => {
         cb();
         started = true;
       }
-    }).on('reload', () => {
-      reload({stream:false});
-    },);
-})
+    })
+});
+
 
 gulp.task('main', ['build'], () => {
    gulp.src(paths.clientEntryPoint)

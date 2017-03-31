@@ -68,6 +68,11 @@
 	  return _react2.default.createElement(
 	    'div',
 	    null,
+	    _react2.default.createElement(
+	      'h1',
+	      null,
+	      'Hey What\'s Up'
+	    ),
 	    'TESTING WHAT THE DOG SAYS: The dog says: ',
 	    props.message
 	  );
