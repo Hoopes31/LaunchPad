@@ -1,8 +1,8 @@
-#LaunchPad
+# LaunchPad
 
 Basic Web App Scaffolding for React.
 
-##Includes
+## Includes
 
 ES6 Piping via `Gulp/Babel`
 
@@ -15,27 +15,27 @@ Express Server Refresh via `Nodemon`
 
 Bundling via `Webpack`
 
-##Use
+## Use
 
 To use install and edit files in the `src` folder
 
-##Purpose
+## Purpose
 
 Built as a starting point for first time react web developers who want a functioning build environment. 
 
-##Installation via terminal
+## Installation via terminal
 
-######Initilize a folder and git repository using
+###### Initilize a folder and git repository using
 `git init`
 
-######Save a copy of this git in the created folder
+###### Save a copy of this git in the created folder
 `git clone https://github.com/Hoopes31/LaunchPad.git`
 
-######Install all required packages by typing the following in your saved folder 
+###### Install all required packages by typing the following in your saved folder 
 `npm i`
 
-######Run by typing 
+###### Run by typing 
 `gulp`
 
-##Giving Thanks
+## Giving Thanks
 Based on [js-stack-from-scratch](https://github.com/verekia/js-stack-from-scratch) by [Verekia](https://github.com/verekia):+1:
