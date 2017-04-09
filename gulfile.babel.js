@@ -6,6 +6,7 @@ import nodemon from 'nodemon'
 import del from 'del'
 import webpack from 'webpack-stream'
 import webpackConfig from './webpack.config.babel'
+import gulpFunction from 'gulp-function'
 
 const paths = {
 
@@ -54,7 +55,7 @@ gulp.task('main', ['build'], () => {
    gulp.src(paths.clientEntryPoint)
     .pipe(webpack(webpackConfig))
     .pipe(gulp.dest(paths.publicDir))
-    .pipe(bs.reload({stream:true}))
+    .pipe(gulpFunction(myFunction))
 })
 
 gulp.task('build', ['clean'], () =>
@@ -69,3 +70,11 @@ gulp.task('clean', () =>
     paths.clientBundle
   )
 )
+
+let myFunction = () => {
+
+  setTimeout( () => {
+    bs.reload()
+  }, 500)
+}
+
