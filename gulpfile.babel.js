@@ -23,7 +23,7 @@ const paths = {
 
 const bs = browserSync.create()
 
-gulp.task('default', ['browser-sync', 'watch'], () => {
+gulp.task('default', ['main', 'browser-sync', 'watch'], () => {
 })
 
 gulp.task('watch', () => {
