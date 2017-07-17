@@ -34,8 +34,10 @@ Built as a starting point for first time react web developers who want a functio
 ###### Install all required packages by typing the following in your saved folder 
 `npm i`
 
-###### Run by typing 
-`gulp`
+###### Use command line scripts to do the following
+`npm run compile` to kick babel and webpack into watch 'n compile mode
+`npm run server` to start nodemon
+`npm start` to start browser-sync
 
 ## Giving Thanks
 Based on [js-stack-from-scratch](https://github.com/verekia/js-stack-from-scratch) by [Verekia](https://github.com/verekia):+1:
