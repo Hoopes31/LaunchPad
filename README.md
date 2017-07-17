@@ -36,7 +36,9 @@ Built as a starting point for first time react web developers who want a functio
 
 ###### Use command line scripts to do the following
 `npm run compile` to kick babel and webpack into watch 'n compile mode
+
 `npm run server` to start nodemon
+
 `npm start` to start browser-sync
 
 ## Giving Thanks
