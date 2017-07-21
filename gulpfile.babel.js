@@ -18,14 +18,7 @@ const paths = {
   publicDir: 'public'
 }
 
-<<<<<<< HEAD
 gulp.task('default', ['main', 'nodemon'], () => {
-=======
-gulp.task('default', ['main', 'watch'], () => {
-})
-
-gulp.task('watch', () => {
->>>>>>> 4a551ea07537d37d1ad31a3472aad66e61c1c7f9
   gulp.watch(paths.allSrcJs, ['main'])
 })
 
@@ -45,13 +38,10 @@ gulp.task('main', ['build'], () => {
    gulp.src(paths.clientEntryPoint)
     .pipe(webpack(webpackConfig))
     .pipe(gulp.dest(paths.clientBundle))
-<<<<<<< HEAD
 })
 
 gulp.task('nodemon', ['main'], () => {
     nodemon({
       script: 'server.js'
     })
-=======
->>>>>>> 4a551ea07537d37d1ad31a3472aad66e61c1c7f9
 })
