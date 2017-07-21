@@ -23,12 +23,13 @@ To use install and edit files in the `src` folder
 
 Built as a starting point for first time react web developers who want a functioning build environment. 
 
-## Installation via terminal
+## Installation: Command Line
 
 ###### Initilize a folder and git repository using
 `git init`
 
 ###### Clone the file into your new folder
+
 `git clone https://github.com/Hoopes31/LaunchPad.git`
 
 ###### Install all required packages by typing the following in your saved folder 

@@ -4,8 +4,14 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+<<<<<<< HEAD
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "browser-sync start --proxy localhost:3000 --files ./public/client-bundle.js"
+=======
+    "compile": "gulp",
+    "server": "nodemon server.js",
+    "start": "browser-sync start --proxy localhost:3000"
+>>>>>>> 4a551ea07537d37d1ad31a3472aad66e61c1c7f9
   },
   "author": "",
   "license": "ISC",
@@ -33,7 +39,10 @@
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
+<<<<<<< HEAD
     "gulp-concat": "^2.6.1",
+=======
+>>>>>>> 4a551ea07537d37d1ad31a3472aad66e61c1c7f9
     "gulp-nodemon": "^2.2.1",
     "gulp-sourcemaps": "^2.4.1",
     "webpack-stream": "^3.2.0"
