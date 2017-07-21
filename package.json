@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "browser-sync start --proxy localhost:3000"
+    "start": "browser-sync start --proxy localhost:3000 --files ./public/client-bundle.js"
   },
   "author": "",
   "license": "ISC",
