@@ -1,3 +1,1 @@
-import Dog from '../shared/dog'
-
-const toby = new Dog('Toby')
+console.log('I\'m a server!')

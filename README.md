@@ -28,14 +28,17 @@ Built as a starting point for first time react web developers who want a functio
 ###### Initilize a folder and git repository using
 `git init`
 
-###### Save a copy of this git in the created folder
+###### Clone the file into your new folder
 `git clone https://github.com/Hoopes31/LaunchPad.git`
 
 ###### Install all required packages by typing the following in your saved folder 
 `npm i`
 
-###### Run by typing 
+###### Run by Babel and Nodemon by typing 
 `gulp`
+
+###### Start Browser-Sync 
+`npm start`
 
 ## Giving Thanks
 Based on [js-stack-from-scratch](https://github.com/verekia/js-stack-from-scratch) by [Verekia](https://github.com/verekia):+1:

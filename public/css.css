@@ -1,0 +1,15 @@
+  .container-fluid {
+    background-color: #FFFFFF;
+    max-width: 700px;
+    text-align: center;
+    margin: auto;
+  }
+
+    .app div {
+    font: 10px sans-serif;
+    background-color: steelblue;
+    text-align: right;
+    padding: 3px;
+    margin: 1px;
+    color: white;
+  }
